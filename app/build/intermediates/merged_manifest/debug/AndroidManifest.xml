@@ -27,11 +27,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.Hackathon" >
         <activity
-            android:name="com.example.hackathon.CreateActivity"
-            android:exported="false"
-            android:label="@string/title_activity_create" />
-        <activity
-            android:name="com.example.hackathon.MainActivity"
+            android:name="com.example.hackathon.HomeActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-29:12
+ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.databinding:viewbinding:7.4.0] C:\Users\yoshi\.gradle\caches\transforms-3\779d5245b42a044500eb9f87ee37c4ac\transformed\viewbinding-7.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\yoshi\.gradle\caches\transforms-3\1aa7b9467484398179697e935a8cb1f8\transformed\navigation-ui-2.5.3\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\yoshi\.gradle\caches\transforms-3\4fbcf167c94e837ff1be43cd429a082f\transformed\material-1.8.0\AndroidManifest.xml:17:1-26:12
@@ -47,6 +47,7 @@ MERGED from [androidx.core:core:1.9.0] C:\Users\yoshi\.gradle\caches\transforms-
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] C:\Users\yoshi\.gradle\caches\transforms-3\31aee31c7d072f8a4ec1b78b5e9d98e1\transformed\lifecycle-runtime-2.6.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] C:\Users\yoshi\.gradle\caches\transforms-3\4fa8f0843ade3a2b96d06cf611ff24fc\transformed\lifecycle-viewmodel-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.1] C:\Users\yoshi\.gradle\caches\transforms-3\a96cf9939546b90c2d2347fc933fe829\transformed\lifecycle-livedata-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\yoshi\.gradle\caches\transforms-3\fd3daf95af5e4e1fd3f3860fc1410040\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\yoshi\.gradle\caches\transforms-3\51d99444bfcce4167befc289aaeead8b\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\yoshi\.gradle\caches\transforms-3\bf77ad590024d0e14c0f8c0505794694\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\yoshi\.gradle\caches\transforms-3\7bc630804cffac1fec48666644408587\transformed\profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
@@ -58,28 +59,27 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\yoshi\.gradle\ca
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\yoshi\.gradle\caches\transforms-3\13436e310dffbc9cef96bd3f99ffcd05\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\yoshi\.gradle\caches\transforms-3\731434dfd3e772425987f9a36caa31ff\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\yoshi\.gradle\caches\transforms-3\40d3d7c3b32b2b3f996b647420cd5534\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\yoshi\.gradle\caches\transforms-3\fd3daf95af5e4e1fd3f3860fc1410040\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-26:12
 	package
 		INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-29:12
+		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-29:12
+		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-29:12
+		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:5:5-27:19
+ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:5:5-24:19
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\yoshi\.gradle\caches\transforms-3\4fbcf167c94e837ff1be43cd429a082f\transformed\material-1.8.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\yoshi\.gradle\caches\transforms-3\4fbcf167c94e837ff1be43cd429a082f\transformed\material-1.8.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\yoshi\.gradle\caches\transforms-3\d5cfd9b05f05865cd2d2bad992fdaec7\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -116,30 +116,22 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\yo
 		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:12:9-47
 	android:dataExtractionRules
 		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.example.hackathon.CreateActivity
-ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:14:9-17:61
-	android:label
-		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:17:13-58
+activity#com.example.hackathon.HomeActivity
+ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:15:9-23:20
 	android:exported
-		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:16:13-37
+		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:17:13-36
 	android:name
-		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:15:13-43
-activity#com.example.hackathon.MainActivity
-ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:18:9-26:20
-	android:exported
-		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:20:13-36
-	android:name
-		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:19:13-41
+		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:16:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:21:13-25:29
+ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:22:17-69
+ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:22:25-66
+		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:24:17-77
+ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:24:27-74
+		ADDED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml:21:27-74
 uses-sdk
 INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml
@@ -230,6 +222,8 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] C:\Users\yoshi\.g
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] C:\Users\yoshi\.gradle\caches\transforms-3\4fa8f0843ade3a2b96d06cf611ff24fc\transformed\lifecycle-viewmodel-ktx-2.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.1] C:\Users\yoshi\.gradle\caches\transforms-3\a96cf9939546b90c2d2347fc933fe829\transformed\lifecycle-livedata-ktx-2.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.1] C:\Users\yoshi\.gradle\caches\transforms-3\a96cf9939546b90c2d2347fc933fe829\transformed\lifecycle-livedata-ktx-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\yoshi\.gradle\caches\transforms-3\fd3daf95af5e4e1fd3f3860fc1410040\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\yoshi\.gradle\caches\transforms-3\fd3daf95af5e4e1fd3f3860fc1410040\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\yoshi\.gradle\caches\transforms-3\51d99444bfcce4167befc289aaeead8b\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\yoshi\.gradle\caches\transforms-3\51d99444bfcce4167befc289aaeead8b\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\yoshi\.gradle\caches\transforms-3\bf77ad590024d0e14c0f8c0505794694\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
@@ -252,8 +246,6 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\yoshi\.gradle\caches\transforms-3\731434dfd3e772425987f9a36caa31ff\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\yoshi\.gradle\caches\transforms-3\40d3d7c3b32b2b3f996b647420cd5534\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\yoshi\.gradle\caches\transforms-3\40d3d7c3b32b2b3f996b647420cd5534\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\yoshi\.gradle\caches\transforms-3\fd3daf95af5e4e1fd3f3860fc1410040\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\yoshi\.gradle\caches\transforms-3\fd3daf95af5e4e1fd3f3860fc1410040\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
 INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\yoshi\Projets\Hackathon-2023\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
