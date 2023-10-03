@@ -2747,6 +2747,8 @@ int drawable abc_textfield_search_material 0x7f070076
 int drawable abc_vector_test 0x7f070077
 int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
+int drawable baseline_account_circle_24 0x7f0700e2
+int drawable baseline_calendar_month_24 0x7f0700e3
 int drawable btn_checkbox_checked_mtrl 0x7f07007a
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f07007b
 int drawable btn_checkbox_unchecked_mtrl 0x7f07007c
@@ -2763,7 +2765,6 @@ int drawable design_snackbar_background 0x7f070086
 int drawable ic_arrow_back_black_24 0x7f070087
 int drawable ic_clear_black_24 0x7f070088
 int drawable ic_clock_black_24dp 0x7f070089
-int drawable ic_dashboard_black_24dp 0x7f07008a
 int drawable ic_home_black_24dp 0x7f07008b
 int drawable ic_keyboard_black_24dp 0x7f07008c
 int drawable ic_launcher_background 0x7f07008d
@@ -2775,7 +2776,6 @@ int drawable ic_mtrl_checked_circle 0x7f070092
 int drawable ic_mtrl_chip_checked_black 0x7f070093
 int drawable ic_mtrl_chip_checked_circle 0x7f070094
 int drawable ic_mtrl_chip_close_circle 0x7f070095
-int drawable ic_notifications_black_24dp 0x7f070096
 int drawable ic_search_black_24 0x7f070097
 int drawable m3_appbar_background 0x7f070098
 int drawable m3_avd_hide_password 0x7f070099

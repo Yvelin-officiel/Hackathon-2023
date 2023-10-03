@@ -4,6 +4,10 @@
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-47:\\drawable\\ic_home_black_24dp.xml"
     },
     {
+        "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-45:\\drawable_baseline_calendar_month_24.xml.flat",
+        "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-47:\\drawable\\baseline_calendar_month_24.xml"
+    },
+    {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-45:\\mipmap-anydpi-v33_ic_launcher.xml.flat",
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-47:\\mipmap-anydpi-v33\\ic_launcher.xml"
     },
@@ -22,6 +26,10 @@
     {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-45:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-47:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-45:\\drawable_baseline_account_circle_24.xml.flat",
+        "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-47:\\drawable\\baseline_account_circle_24.xml"
     },
     {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-45:\\xml_backup_rules.xml.flat",

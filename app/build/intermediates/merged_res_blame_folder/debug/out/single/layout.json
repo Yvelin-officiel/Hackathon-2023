@@ -4,12 +4,8 @@
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-47:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "com.example.hackathon.app-mergeDebugResources-44:/layout/fragment_calender.xml",
-        "source": "com.example.hackathon.app-main-47:/layout/fragment_calender.xml"
-    },
-    {
-        "merged": "com.example.hackathon.app-mergeDebugResources-44:/layout/fragment_account.xml",
-        "source": "com.example.hackathon.app-main-47:/layout/fragment_account.xml"
+        "merged": "com.example.hackathon.app-mergeDebugResources-44:/layout/activity_home.xml",
+        "source": "com.example.hackathon.app-main-47:/layout/activity_home.xml"
     },
     {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-mergeDebugResources-44:\\layout\\activity_home.xml",
@@ -18,10 +14,6 @@
     {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-mergeDebugResources-44:\\layout\\fragment_calender.xml",
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-47:\\layout\\fragment_calender.xml"
-    },
-    {
-        "merged": "com.example.hackathon.app-mergeDebugResources-44:/layout/fragment_home.xml",
-        "source": "com.example.hackathon.app-main-47:/layout/fragment_home.xml"
     },
     {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-mergeDebugResources-44:\\layout\\fragment_account.xml",
