@@ -10,4 +10,5 @@
     <string name="event">Evenement</string>
     <string name="createTitle">Création d\'un message</string>
     <string name="messageText">Message</string>
+    <string name="calendarTitle">CALENDRIER</string>
 </resources>

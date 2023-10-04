@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <string name="anonyme">Anonyme</string>
     <string name="app_name">Hackathon</string>
+    <string name="calendarTitle">CALENDRIER</string>
     <string name="createTitle">Création d\'un message</string>
     <string name="envoyer">Envoyer</string>
     <string name="event">Evenement</string>
@@ -25,5 +26,6 @@
     <string name="title_calendar">Calendrier</string>
     <string name="title_home">Accueil</string>
     <style name="Theme.Hackathon" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <item name="colorPrimary">@color/teal_200</item>
     </style>
 </resources>

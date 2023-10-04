@@ -3,9 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center_horizontal"
-    >
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
@@ -17,20 +16,20 @@
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:checkedButton="@id/radiobtn1">
+        android:checkedButton="@id/radiobtn1"
+        android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/radiobtn1"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:text="@string/message"/>
+            android:text="@string/message" />
 
         <RadioButton
             android:id="@+id/radiobtn2"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:text="@string/sondage"/>
+            android:text="@string/sondage" />
 
         <RadioButton
             android:id="@+id/radiobtn3"
@@ -42,31 +41,29 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:autofillHints="username"
-        android:text="@string/messageText"
         android:layout_margin="30dp"
+        android:autofillHints="username"
         android:inputType="textAutoCorrect"
+        android:text="@string/messageText"
         tools:ignore="LabelFor" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
         <androidx.appcompat.widget.SwitchCompat
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:text="@string/anonyme"
             android:layout_gravity="center"
-            />
+            android:text="@string/anonyme" />
 
         <Button
             android:id="@+id/submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/envoyer"/>
+            android:text="@string/envoyer" />
     </LinearLayout>
 
 </LinearLayout>
