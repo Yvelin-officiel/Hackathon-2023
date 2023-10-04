@@ -2,5 +2,12 @@
     <string name="app_name">Hackathon</string>
     <string name="title_activity_create">CreateActivity</string>
     <string name="title_home">Accueil</string>
-    <string name="title_calender">Calendrier</string>
+    <string name="title_calendar">Calendrier</string>
+    <string name="envoyer">Envoyer</string>
+    <string name="anonyme">Anonyme</string>
+    <string name="message">Message</string>
+    <string name="sondage">Sondage</string>
+    <string name="event">Evenement</string>
+    <string name="createTitle">Création d\'un message</string>
+    <string name="messageText">Message</string>
 </resources>

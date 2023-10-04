@@ -5,6 +5,7 @@ import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import com.example.hackathon.ui.account.AccountFragment;
 import com.example.hackathon.ui.calender.CalenderFragment;
@@ -17,8 +18,7 @@ public class HomeActivity extends AppCompatActivity
     BottomNavigationView bottomNavigationView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
@@ -27,38 +27,52 @@ public class HomeActivity extends AppCompatActivity
 
         bottomNavigationView
                 .setOnItemSelectedListener(this);
+
+        // set home fragment by default (messaging page)
+        setFragmentView(homeFragment);
     }
+
     HomeFragment homeFragment = new HomeFragment();
     CalenderFragment calenderFragment = new CalenderFragment();
     AccountFragment accountFragment = new AccountFragment();
 
+    /**
+     * Check what selected item is corresponding to and change the view for that item
+      * @param item The selected item
+     * @return boolean
+     */
     @Override
     public boolean
-    onNavigationItemSelected(@NonNull MenuItem item)
-    {
+    onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
             case R.id.navigation_home:
-                getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.flFragment, homeFragment)
-                        .commit();
+                setFragmentView(homeFragment);
                 return true;
 
             case R.id.navigation_calender:
-                getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.flFragment, calenderFragment)
-                        .commit();
+                setFragmentView(calenderFragment);
                 return true;
 
             case R.id.navigation_account:
-                getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.flFragment, accountFragment)
-                        .commit();
+                setFragmentView(accountFragment);
                 return true;
         }
         return false;
+    }
+
+    /**
+     * Set the parameter to the main view
+     * @param fragment
+     */
+    public void setFragmentView(Fragment fragment) {
+        try {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.flFragment, fragment)
+                    .commit();
+        } catch (Exception e) {
+            System.out.println("Setting fragment to view failed " + e);
+        }
     }
 }

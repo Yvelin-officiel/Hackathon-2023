@@ -14,7 +14,7 @@
     <fragment
         android:id="@+id/navigation_calender"
         android:name="com.example.hackathon.ui.calender.CalenderFragment"
-        android:label="@string/title_calender"
+        android:label="@string/title_calendar"
         tools:layout="@layout/fragment_calender" />
 
     <fragment

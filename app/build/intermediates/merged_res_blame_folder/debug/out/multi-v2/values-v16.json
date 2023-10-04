@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.hackathon.app-mergeDebugResources-43:/values-v16/values-v16.xml",
+            "outputFile": "com.example.hackathon.app-mergeDebugResources-48:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\yoshi\\.gradle\\caches\\transforms-3\\85625968673fb9fd8db34217596f6efd\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\yoshi\\.gradle\\caches\\transforms-3\\1062255b96208a30fa01192cd1d10fce\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\yoshi\\.gradle\\caches\\transforms-3\\8dfa01e26e3a1ce0f11a38ffb7d7a3c4\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\yoshi\\.gradle\\caches\\transforms-3\\b88210cd606ad63f433ac0a48c39b1e0\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
