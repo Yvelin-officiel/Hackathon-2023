@@ -4,10 +4,12 @@ package com.example.hackathon.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.CalendarView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.hackathon.R;
@@ -17,20 +19,33 @@ import java.lang.String;
 
 public final class FragmentCalenderBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayout rootView;
+
+  @NonNull
+  public final CalendarView calendarView;
+
+  @NonNull
+  public final Button eventCreate;
+
+  @NonNull
+  public final TextView eventsDisplay;
 
   @NonNull
   public final TextView textDashboard;
 
-  private FragmentCalenderBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView textDashboard) {
+  private FragmentCalenderBinding(@NonNull LinearLayout rootView,
+      @NonNull CalendarView calendarView, @NonNull Button eventCreate,
+      @NonNull TextView eventsDisplay, @NonNull TextView textDashboard) {
     this.rootView = rootView;
+    this.calendarView = calendarView;
+    this.eventCreate = eventCreate;
+    this.eventsDisplay = eventsDisplay;
     this.textDashboard = textDashboard;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -55,13 +70,32 @@ public final class FragmentCalenderBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.calendarView;
+      CalendarView calendarView = ViewBindings.findChildViewById(rootView, id);
+      if (calendarView == null) {
+        break missingId;
+      }
+
+      id = R.id.eventCreate;
+      Button eventCreate = ViewBindings.findChildViewById(rootView, id);
+      if (eventCreate == null) {
+        break missingId;
+      }
+
+      id = R.id.eventsDisplay;
+      TextView eventsDisplay = ViewBindings.findChildViewById(rootView, id);
+      if (eventsDisplay == null) {
+        break missingId;
+      }
+
       id = R.id.text_dashboard;
       TextView textDashboard = ViewBindings.findChildViewById(rootView, id);
       if (textDashboard == null) {
         break missingId;
       }
 
-      return new FragmentCalenderBinding((ConstraintLayout) rootView, textDashboard);
+      return new FragmentCalenderBinding((LinearLayout) rootView, calendarView, eventCreate,
+          eventsDisplay, textDashboard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

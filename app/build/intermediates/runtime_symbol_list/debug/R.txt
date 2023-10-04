@@ -2771,6 +2771,7 @@ int drawable abc_vector_test 0x7f070077
 int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
 int drawable baseline_account_circle_24 0x7f07007a
+int drawable baseline_add_circle_24 0x7f0700f7
 int drawable baseline_calendar_month_24 0x7f07007b
 int drawable btn_checkbox_checked_mtrl 0x7f07007c
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f07007d
@@ -3005,6 +3006,7 @@ int id browser_actions_menu_view 0x7f08006a
 int id buttonLogin 0x7f08006b
 int id buttonPanel 0x7f08006c
 int id cache_measures 0x7f08006d
+int id calendarView 0x7f080213
 int id callMeasure 0x7f08006e
 int id cancel_button 0x7f08006f
 int id carryVelocity 0x7f080070
@@ -3086,6 +3088,8 @@ int id end 0x7f0800bb
 int id endToStart 0x7f0800bc
 int id enterAlways 0x7f0800bd
 int id enterAlwaysCollapsed 0x7f0800be
+int id eventCreate 0x7f080212
+int id eventsDisplay 0x7f080211
 int id exitUntilCollapsed 0x7f0800bf
 int id expand_activities_button 0x7f0800c0
 int id expanded_menu 0x7f0800c1
@@ -3659,6 +3663,7 @@ int string bottomsheet_action_expand 0x7f120021
 int string bottomsheet_action_expand_halfway 0x7f120022
 int string bottomsheet_drag_handle_clicked 0x7f120023
 int string bottomsheet_drag_handle_content_description 0x7f120024
+int string calendarTitle 0x7f1200c3
 int string character_counter_content_description 0x7f120025
 int string character_counter_overflowed_content_description 0x7f120026
 int string character_counter_pattern 0x7f120027
