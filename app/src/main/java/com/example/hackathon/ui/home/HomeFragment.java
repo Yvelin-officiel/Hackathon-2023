@@ -1,5 +1,6 @@
 package com.example.hackathon.ui.home;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,14 +8,31 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.hackathon.CreateActivity;
+import com.example.hackathon.Message;
+import com.example.hackathon.MyAdapter;
 import com.example.hackathon.R;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
-    public HomeFragment(){
+    RecyclerView recyclerView;
+    DatabaseReference databaseReference;
+    MyAdapter myAdapter;
+    ArrayList<Message> list;
+
+    public HomeFragment() {
         // require a empty public constructor
     }
 
@@ -22,11 +40,37 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+        recyclerView = view.findViewById(R.id.messageList);
+        databaseReference = FirebaseDatabase.getInstance().getReference("messages");
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        list = new ArrayList<>();
+        myAdapter = new MyAdapter(getActivity(), list);
+        recyclerView.setAdapter(myAdapter);
+
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                    Message message = dataSnapshot.getValue(Message.class);
+                    list.add(message);
+                }
+                myAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
         Button b = (Button) view.findViewById(R.id.createButton);
         b.setOnClickListener(view1 -> {
-                Intent in = new Intent(getActivity(), CreateActivity.class);
-                startActivity(in);
-            });
+            Intent in = new Intent(getActivity(), CreateActivity.class);
+            startActivity(in);
+        });
 
         return view;
     }
