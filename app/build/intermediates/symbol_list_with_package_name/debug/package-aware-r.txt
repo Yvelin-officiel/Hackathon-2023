@@ -3687,7 +3687,7 @@ string createTitle
 string envoyer
 string error_a11y_label
 string error_icon_content_description
-string evenement
+string event
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
@@ -3816,7 +3816,7 @@ string side_sheet_behavior
 string sondage
 string status_bar_notification_info_overflow
 string title_activity_create
-string title_calender
+string title_calendar
 string title_home
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

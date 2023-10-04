@@ -43,7 +43,7 @@ string anonyme
 string app_name
 string createTitle
 string envoyer
-string evenement
+string event
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -54,7 +54,7 @@ string messageText
 string project_id
 string sondage
 string title_activity_create
-string title_calender
+string title_calendar
 string title_home
 style Theme.Hackathon
 xml backup_rules

@@ -23,14 +23,10 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         Button b = (Button) view.findViewById(R.id.createButton);
-        b.setOnClickListener(new View.OnClickListener() {
-
-        @Override
-            public void onClick(View view) {
+        b.setOnClickListener(view1 -> {
                 Intent in = new Intent(getActivity(), CreateActivity.class);
                 startActivity(in);
-            }
-        });
+            });
 
         return view;
     }

@@ -3686,7 +3686,7 @@ int string createTitle 0x7f12003c
 int string envoyer 0x7f12003d
 int string error_a11y_label 0x7f12003e
 int string error_icon_content_description 0x7f12003f
-int string evenement 0x7f120040
+int string event 0x7f120040
 int string exposed_dropdown_menu_content_description 0x7f120041
 int string fab_transformation_scrim_behavior 0x7f120042
 int string fab_transformation_sheet_behavior 0x7f120043
@@ -3815,7 +3815,7 @@ int string side_sheet_behavior 0x7f1200bd
 int string sondage 0x7f1200be
 int string status_bar_notification_info_overflow 0x7f1200bf
 int string title_activity_create 0x7f1200c0
-int string title_calender 0x7f1200c1
+int string title_calendar 0x7f1200c1
 int string title_home 0x7f1200c2
 int style AlertDialog_AppCompat 0x7f130000
 int style AlertDialog_AppCompat_Light 0x7f130001
