@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="grey">#FF7F7F7F</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -13,14 +14,14 @@
     <string name="createTitle">Création d\'un message</string>
     <string name="envoyer">Envoyer</string>
     <string name="event">Evenement</string>
-    <string name="gcm_defaultSenderId" translatable="false">747146668059</string>
-    <string name="google_api_key" translatable="false">AIzaSyB6pKmU0tKaN4awcZ1wcGP_gn7K3iRgnF0</string>
-    <string name="google_app_id" translatable="false">1:747146668059:android:5b37d58c1d1ff3aa5ef0be</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB6pKmU0tKaN4awcZ1wcGP_gn7K3iRgnF0</string>
-    <string name="google_storage_bucket" translatable="false">hackathon-1c9cc.appspot.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">925646871847</string>
+    <string name="google_api_key" translatable="false">AIzaSyCapa3gS63RxRWh-xwMBBKU57Ty3i08_M8</string>
+    <string name="google_app_id" translatable="false">1:925646871847:android:c6166bcc7cf9790df39d02</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCapa3gS63RxRWh-xwMBBKU57Ty3i08_M8</string>
+    <string name="google_storage_bucket" translatable="false">hackathon2023-e855b.appspot.com</string>
     <string name="message">Message</string>
-    <string name="messageText">Message</string>
-    <string name="project_id" translatable="false">hackathon-1c9cc</string>
+    <string name="messageText">Inserer votre texte ici</string>
+    <string name="project_id" translatable="false">hackathon2023-e855b</string>
     <string name="sondage">Sondage</string>
     <string name="title_activity_create">CreateActivity</string>
     <string name="title_calendar">Calendrier</string>

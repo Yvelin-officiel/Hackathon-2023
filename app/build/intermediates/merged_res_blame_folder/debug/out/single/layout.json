@@ -12,12 +12,12 @@
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "com.example.hackathon.app-mergeDebugResources-49:/layout/fragment_calender.xml",
-        "source": "com.example.hackathon.app-main-52:/layout/fragment_calender.xml"
-    },
-    {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-mergeDebugResources-49:\\layout\\activity_login.xml",
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "com.example.hackathon.app-mergeDebugResources-49:/layout/activity_create.xml",
+        "source": "com.example.hackathon.app-main-52:/layout/activity_create.xml"
     },
     {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-mergeDebugResources-49:\\layout\\fragment_calender.xml",

@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.CalendarView;
+import android.widget.DatePicker;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -22,7 +22,7 @@ public final class FragmentCalenderBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final CalendarView calendarView;
+  public final DatePicker datePicker;
 
   @NonNull
   public final Button eventCreate;
@@ -33,11 +33,11 @@ public final class FragmentCalenderBinding implements ViewBinding {
   @NonNull
   public final TextView textDashboard;
 
-  private FragmentCalenderBinding(@NonNull LinearLayout rootView,
-      @NonNull CalendarView calendarView, @NonNull Button eventCreate,
-      @NonNull TextView eventsDisplay, @NonNull TextView textDashboard) {
+  private FragmentCalenderBinding(@NonNull LinearLayout rootView, @NonNull DatePicker datePicker,
+      @NonNull Button eventCreate, @NonNull TextView eventsDisplay,
+      @NonNull TextView textDashboard) {
     this.rootView = rootView;
-    this.calendarView = calendarView;
+    this.datePicker = datePicker;
     this.eventCreate = eventCreate;
     this.eventsDisplay = eventsDisplay;
     this.textDashboard = textDashboard;
@@ -70,9 +70,9 @@ public final class FragmentCalenderBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.calendarView;
-      CalendarView calendarView = ViewBindings.findChildViewById(rootView, id);
-      if (calendarView == null) {
+      id = R.id.datePicker;
+      DatePicker datePicker = ViewBindings.findChildViewById(rootView, id);
+      if (datePicker == null) {
         break missingId;
       }
 
@@ -94,7 +94,7 @@ public final class FragmentCalenderBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentCalenderBinding((LinearLayout) rootView, calendarView, eventCreate,
+      return new FragmentCalenderBinding((LinearLayout) rootView, datePicker, eventCreate,
           eventsDisplay, textDashboard);
     }
     String missingId = rootView.getResources().getResourceName(id);
