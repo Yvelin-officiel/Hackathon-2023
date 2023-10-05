@@ -51,12 +51,27 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 Users user = snapshot.getValue(Users.class);
                 String email = user.getEmail();
+                String nomPrenom = "(anonyme)";
 
                 Date date = new Date(m.getTimestamp());
                 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.getDefault());
                 String formattedDate = sdf.format(date);
 
-                holder.ano.setText(email);
+                if (!m.isAnonyme()) {
+                    String[] parts = email.split("@");
+                    String[] nameParts = parts[0].split("\\.");
+
+                    String prenom = nameParts[0];
+                    String nom = nameParts[1];
+
+                    // Formatez le nom et le prénom
+                    nomPrenom = nom.substring(0, 1).toUpperCase() + nom.substring(1).toLowerCase() + " " +
+                            prenom.substring(0, 1).toUpperCase() + prenom.substring(1).toLowerCase();
+                } else {
+                    holder.ano.setTextSize(13);
+                }
+
+                holder.ano.setText(nomPrenom);
                 holder.msg.setText(m.getMessageText());
                 holder.date.setText(formattedDate);
             }
