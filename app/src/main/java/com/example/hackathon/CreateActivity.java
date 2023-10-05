@@ -22,7 +22,6 @@ import com.google.firebase.database.FirebaseDatabase;
 public class CreateActivity extends AppCompatActivity {
     private DatabaseReference rootNode;
     private EditText message;
-    private FirebaseAuth auth;
     private FirebaseUser user;
 
     public int countTopics;
@@ -34,7 +33,7 @@ public class CreateActivity extends AppCompatActivity {
 
         message = findViewById(R.id.edtMessage);
         rootNode = FirebaseDatabase.getInstance().getReference("messages");
-        auth = FirebaseAuth.getInstance();
+        FirebaseAuth auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
 
 
@@ -164,6 +163,7 @@ public class CreateActivity extends AppCompatActivity {
         Message msg = new Message(userId, message.getText().toString(), System.currentTimeMillis(), isAnonyme);
         DatabaseReference newMessage = rootNode.push();
         String messageId = newMessage.getKey();
-        rootNode.child(messageId).setValue(msg);
+        if (messageId != null)
+            rootNode.child(messageId).setValue(msg);
     }
 }

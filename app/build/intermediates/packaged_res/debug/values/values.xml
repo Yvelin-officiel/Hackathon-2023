@@ -27,6 +27,7 @@
     <string name="title_calendar">Calendrier</string>
     <string name="title_home">Accueil</string>
     <style name="Theme.Hackathon" parent="Theme.MaterialComponents.Light.NoActionBar">
-    <item name="colorPrimary">@color/teal_200</item>
+        <item name="colorPrimary">@color/teal_200</item>
+        <item name="android:statusBarColor">@color/teal_200</item>
     </style>
 </resources>

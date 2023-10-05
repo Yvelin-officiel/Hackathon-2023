@@ -50,6 +50,7 @@ id radioGroup
 id radioMessage
 id radioPoll
 id submit
+id switchAnonyme
 id text_dashboard
 id text_home
 id text_notifications

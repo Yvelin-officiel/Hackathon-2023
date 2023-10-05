@@ -33,6 +33,9 @@ public class CalenderFragment extends Fragment {
         });
 
         ScrollView scrollView = (ScrollView) view.findViewById(R.id.events);
+        TextView text = new TextView(getContext());
+        text.setGravity(1);
+        scrollView.addView(text);
 
         // Get selected day in the calendar
         DatePicker datePicker = view.findViewById(R.id.datePicker);
@@ -41,10 +44,9 @@ public class CalenderFragment extends Fragment {
             @Override
             public void onDateChanged(DatePicker view, int year, int month, int dayOfMonth) {
                 // TODO Check if there is any event at the selected date, display following else
-                TextView text = new TextView(getContext());
-                text.setText("Il n'existe aucun événement pour ce jour ;(");
-                text.setGravity(1);
-                scrollView.addView(text);
+
+                text.setText("Il n'y a encore aucun événement ce jour ci ;(");
+
             }
         });
 
