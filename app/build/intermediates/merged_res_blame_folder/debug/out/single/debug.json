@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-50:\\layout_activity_message.xml.flat",
+        "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\layout\\activity_message.xml"
+    },
+    {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-50:\\layout_activity_login.xml.flat",
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\layout\\activity_login.xml"
     },
@@ -36,10 +40,6 @@
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\mipmap-mdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.example.hackathon.app-merged_res-50:/layout_activity_message.xml.flat",
-        "source": "com.example.hackathon.app-main-52:/layout/activity_message.xml"
-    },
-    {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-50:\\layout_fragment_home.xml.flat",
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\layout\\fragment_home.xml"
     },
@@ -72,12 +72,12 @@
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.hackathon.app-merged_res-50:/layout_fragment_account.xml.flat",
-        "source": "com.example.hackathon.app-main-52:/layout/fragment_account.xml"
-    },
-    {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-50:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.hackathon.app-merged_res-50:/layout_fragment_calender.xml.flat",
+        "source": "com.example.hackathon.app-main-52:/layout/fragment_calender.xml"
     },
     {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-50:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",

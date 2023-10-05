@@ -5,10 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -19,7 +19,7 @@ import java.lang.String;
 
 public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final Button createButton;
@@ -30,7 +30,7 @@ public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
   public final TextView textHome;
 
-  private FragmentHomeBinding(@NonNull LinearLayout rootView, @NonNull Button createButton,
+  private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull Button createButton,
       @NonNull RecyclerView messageList, @NonNull TextView textHome) {
     this.rootView = rootView;
     this.createButton = createButton;
@@ -40,7 +40,7 @@ public final class FragmentHomeBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -83,7 +83,8 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeBinding((LinearLayout) rootView, createButton, messageList, textHome);
+      return new FragmentHomeBinding((ConstraintLayout) rootView, createButton, messageList,
+          textHome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

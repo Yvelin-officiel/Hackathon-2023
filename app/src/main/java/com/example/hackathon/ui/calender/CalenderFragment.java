@@ -6,20 +6,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.CalendarView;
 import android.widget.DatePicker;
-import android.widget.Toast;
+import android.widget.ScrollView;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
 import com.example.hackathon.CreateActivity;
 import com.example.hackathon.R;
 
-import java.util.Date;
-
 public class CalenderFragment extends Fragment {
 
-    public CalenderFragment(){
+    public CalenderFragment() {
         // require a empty public constructor
     }
 
@@ -34,14 +32,19 @@ public class CalenderFragment extends Fragment {
             startActivity(in);
         });
 
+        ScrollView scrollView = (ScrollView) view.findViewById(R.id.events);
+
         // Get selected day in the calendar
         DatePicker datePicker = view.findViewById(R.id.datePicker);
         datePicker.setOnDateChangedListener(new DatePicker.OnDateChangedListener() {
 
             @Override
-            public void onDateChanged(DatePicker view, int year, int month, int dayOfMonth)
-            {
-                Toast.makeText(getContext(), ""+dayOfMonth, Toast.LENGTH_SHORT).show();
+            public void onDateChanged(DatePicker view, int year, int month, int dayOfMonth) {
+                // TODO Check if there is any event at the selected date, display following else
+                TextView text = new TextView(getContext());
+                text.setText("Il n'existe aucun événement pour ce jour ;(");
+                text.setGravity(1);
+                scrollView.addView(text);
             }
         });
 
