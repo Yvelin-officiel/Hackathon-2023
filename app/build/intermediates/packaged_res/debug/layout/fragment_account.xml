@@ -38,12 +38,12 @@
                 android:src="@drawable/default_profile_image" />
 
             <TextView
-                android:id="@+id/usernameTextView"
+                android:id="@+id/userNameTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/profileImage"
                 android:layout_centerHorizontal="true"
-                android:text="Pseudo"
+                android:text="userName"
                 android:textSize="30sp"
                 android:layout_marginBottom="40dp"
                 />
@@ -56,6 +56,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+
 
 
             <Button

@@ -1,20 +1,12 @@
 package com.example.hackathon;
 
-import com.example.hackathon.R;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.hackathon.ui.account.AccountFragment;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -38,7 +30,6 @@ public class MessageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
-        Button backButton = findViewById(R.id.backButton);
 
         recycler = findViewById(R.id.listMessage);
         databaseReference = FirebaseDatabase.getInstance().getReference("messages");
@@ -59,8 +50,6 @@ public class MessageActivity extends AppCompatActivity {
                     list.add(message);
                 }
                 messageAdapter.sortMessagesByTimestamp();
-
-
             }
 
             @Override
@@ -69,15 +58,11 @@ public class MessageActivity extends AppCompatActivity {
             }
 
         });
-
-
-
     }
-    @Override
-    public void onBackPressed () {
-        super.onBackPressed();
+    public void back(View view){
+        Intent intent = new Intent(MessageActivity.this, HomeActivity.class);
+        startActivity(intent);
         finish();
     }
-
 
 }

@@ -37,19 +37,19 @@ public final class FragmentAccountBinding implements ViewBinding {
   public final TextView textNotifications;
 
   @NonNull
-  public final TextView usernameTextView;
+  public final TextView userNameTextView;
 
   private FragmentAccountBinding(@NonNull RelativeLayout rootView,
       @NonNull Button editMessagesButton, @NonNull Button editVotesButton,
       @NonNull Button logoutButton, @NonNull ImageView profileImage,
-      @NonNull TextView textNotifications, @NonNull TextView usernameTextView) {
+      @NonNull TextView textNotifications, @NonNull TextView userNameTextView) {
     this.rootView = rootView;
     this.editMessagesButton = editMessagesButton;
     this.editVotesButton = editVotesButton;
     this.logoutButton = logoutButton;
     this.profileImage = profileImage;
     this.textNotifications = textNotifications;
-    this.usernameTextView = usernameTextView;
+    this.userNameTextView = userNameTextView;
   }
 
   @Override
@@ -109,14 +109,14 @@ public final class FragmentAccountBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.usernameTextView;
-      TextView usernameTextView = ViewBindings.findChildViewById(rootView, id);
-      if (usernameTextView == null) {
+      id = R.id.userNameTextView;
+      TextView userNameTextView = ViewBindings.findChildViewById(rootView, id);
+      if (userNameTextView == null) {
         break missingId;
       }
 
       return new FragmentAccountBinding((RelativeLayout) rootView, editMessagesButton,
-          editVotesButton, logoutButton, profileImage, textNotifications, usernameTextView);
+          editVotesButton, logoutButton, profileImage, textNotifications, userNameTextView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

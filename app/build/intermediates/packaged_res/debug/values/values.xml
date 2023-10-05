@@ -9,7 +9,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <string name="anonyme">Anonyme</string>
-    <string name="app_name">Hackathon</string>
+    <string name="app_name">YnovSocial</string>
     <string name="calendarTitle">CALENDRIER</string>
     <string name="createTitle">Création d\'un message</string>
     <string name="envoyer">Envoyer</string>

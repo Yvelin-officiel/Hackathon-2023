@@ -2983,6 +2983,7 @@ id always
 id androidx_window_activity_scope
 id animateToEnd
 id animateToStart
+id ano
 id antiClockwise
 id anticipate
 id arc
@@ -2992,6 +2993,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backButton
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3051,6 +3053,7 @@ id custom
 id customPanel
 id cut
 id dark
+id date
 id datePicker
 id date_picker_actions
 id decelerate
@@ -3161,6 +3164,7 @@ id light
 id line1
 id line3
 id linear
+id listMessage
 id listMode
 id list_item
 id locale
@@ -3193,6 +3197,7 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id message
+id messageList
 id middle
 id mini
 id mobile_navigation
@@ -3203,6 +3208,7 @@ id month_navigation_next
 id month_navigation_previous
 id month_title
 id motion_base
+id msg
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
 id mtrl_calendar_days_of_week
@@ -3421,7 +3427,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id usernameTextView
+id userNameTextView
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3552,6 +3558,7 @@ layout abc_tooltip
 layout activity_create
 layout activity_home
 layout activity_login
+layout activity_message
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -3592,6 +3599,7 @@ layout material_time_input
 layout material_timepicker
 layout material_timepicker_dialog
 layout material_timepicker_textinput_display
+layout message
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -3636,6 +3644,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu bottom_nav_menu
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 navigation mobile_navigation
 plurals mtrl_badge_content_description

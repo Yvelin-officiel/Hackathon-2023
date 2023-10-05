@@ -7,10 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-
 import androidx.fragment.app.Fragment;
-
-import com.example.hackathon.HomeActivity;
 import com.example.hackathon.MainActivity;
 import com.example.hackathon.MessageActivity;
 import com.example.hackathon.R;
