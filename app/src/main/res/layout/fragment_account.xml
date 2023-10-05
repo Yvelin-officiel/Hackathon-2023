@@ -58,6 +58,8 @@
             android:layout_height="match_parent">
 
 
+
+
             <Button
                 android:id="@+id/editMessagesButton"
                 android:layout_width="wrap_content"
