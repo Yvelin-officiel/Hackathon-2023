@@ -7,12 +7,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CalendarView;
+import android.widget.DatePicker;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
 import com.example.hackathon.CreateActivity;
 import com.example.hackathon.R;
+
+import java.util.Date;
 
 public class CalenderFragment extends Fragment {
 
@@ -32,11 +35,11 @@ public class CalenderFragment extends Fragment {
         });
 
         // Get selected day in the calendar
-        CalendarView calendarView=(CalendarView) view.findViewById(R.id.calendarView);
-        calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+        DatePicker datePicker = view.findViewById(R.id.datePicker);
+        datePicker.setOnDateChangedListener(new DatePicker.OnDateChangedListener() {
 
             @Override
-            public void onSelectedDayChange(CalendarView view, int year, int month, int dayOfMonth)
+            public void onDateChanged(DatePicker view, int year, int month, int dayOfMonth)
             {
                 Toast.makeText(getContext(), ""+dayOfMonth, Toast.LENGTH_SHORT).show();
             }

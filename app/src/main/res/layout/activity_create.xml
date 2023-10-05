@@ -1,64 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:text="@string/createTitle"
-        android:textSize="50sp" />
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/createTitle"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/baseline_cancel_24"
+            android:contentDescription="cancel creation"
+            android:gravity="end"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checkedButton="@id/radiobtn1"
+        android:layout_height="60dp"
+        android:checkedButton="@id/radioMessage"
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/radiobtn1"
+            android:id="@+id/radioMessage"
             android:layout_width="wrap_content"
-            android:layout_height="48dp"
+            android:layout_height="match_parent"
             android:text="@string/message" />
 
         <RadioButton
-            android:id="@+id/radiobtn2"
+            android:id="@+id/radioPoll"
             android:layout_width="wrap_content"
-            android:layout_height="48dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:text="@string/sondage" />
 
         <RadioButton
-            android:id="@+id/radiobtn3"
+            android:id="@+id/radioEvent"
             android:layout_width="wrap_content"
-            android:layout_height="48dp"
+            android:layout_height="match_parent"
             android:text="@string/event" />
     </RadioGroup>
 
     <EditText
         android:id="@+id/edtMessage"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_margin="30dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
         android:autofillHints="username"
-        android:inputType="textAutoCorrect"
-        android:text="@string/messageText"
+        android:background="@drawable/edit_text_border"
+        android:hint="@string/messageText"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="2000"
+        android:textAlignment="center"
         tools:ignore="LabelFor" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layoutFlex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
         android:orientation="horizontal">
 
         <androidx.appcompat.widget.SwitchCompat
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_gravity="center"
-            android:text="@string/anonyme" />
+            android:text="@string/anonyme"
+            android:textColor="@color/grey" />
 
         <Button
             android:id="@+id/submit"

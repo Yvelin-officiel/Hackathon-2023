@@ -1429,6 +1429,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color grey
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color m3_appbar_overlay_color
@@ -2769,11 +2770,13 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable account_top_background
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_account_circle_24
 drawable baseline_add_circle_24
 drawable baseline_calendar_month_24
+drawable baseline_cancel_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2801,11 +2804,13 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable default_profile_image
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable edit_text_border
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_arrow_back_black_24
@@ -3007,7 +3012,6 @@ id browser_actions_menu_view
 id buttonLogin
 id buttonPanel
 id cache_measures
-id calendarView
 id callMeasure
 id cancel_button
 id carryVelocity
@@ -3047,6 +3051,7 @@ id custom
 id customPanel
 id cut
 id dark
+id datePicker
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3080,9 +3085,12 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editMessagesButton
 id editTextPassword
 id editTextUsername
+id editVotesButton
 id edit_query
+id edtMessage
 id elastic
 id embed
 id end
@@ -3145,6 +3153,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layoutFlex
 id left
 id leftToRight
 id legacy
@@ -3155,6 +3164,7 @@ id linear
 id listMode
 id list_item
 id locale
+id logoutButton
 id ltr
 id m3_side_sheet
 id marquee
@@ -3261,12 +3271,14 @@ id pin
 id position
 id postLayout
 id pressed
+id profileImage
 id progress_circular
 id progress_horizontal
 id radio
-id radiobtn1
-id radiobtn2
-id radiobtn3
+id radioEvent
+id radioGroup
+id radioMessage
+id radioPoll
 id ratio
 id rectangles
 id reverseSawtooth
@@ -3409,6 +3421,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id usernameTextView
 id vertical_only
 id view_offset_helper
 id view_transition

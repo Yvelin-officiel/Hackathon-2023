@@ -8,12 +8,24 @@
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-50:\\drawable_edit_text_border.xml.flat",
+        "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\drawable\\edit_text_border.xml"
+    },
+    {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-50:\\layout_activity_create.xml.flat",
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\layout\\activity_create.xml"
     },
     {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-50:\\navigation_mobile_navigation.xml.flat",
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-50:\\drawable_baseline_cancel_24.xml.flat",
+        "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\drawable\\baseline_cancel_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-50:\\drawable_default_profile_image.png.flat",
+        "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\drawable\\default_profile_image.png"
     },
     {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-50:\\layout_fragment_calender.xml.flat",
@@ -36,6 +48,10 @@
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\drawable\\baseline_account_circle_24.xml"
     },
     {
+        "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-50:\\drawable_account_top_background.xml.flat",
+        "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\drawable\\account_top_background.xml"
+    },
+    {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-50:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\xml\\backup_rules.xml"
     },
@@ -46,10 +62,6 @@
     {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-50:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\drawable\\ic_launcher_background.xml"
-    },
-    {
-        "merged": "com.example.hackathon.app-merged_res-50:/layout_fragment_calender.xml.flat",
-        "source": "com.example.hackathon.app-main-52:/layout/fragment_calender.xml"
     },
     {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-50:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -114,6 +126,10 @@
     {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-50:\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-main-52:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.hackathon.app-merged_res-50:/layout_activity_create.xml.flat",
+        "source": "com.example.hackathon.app-main-52:/layout/activity_create.xml"
     },
     {
         "merged": "C:\\Users\\yoshi\\.gradle\\daemon\\7.5\\com.example.hackathon.app-merged_res-50:\\layout_fragment_account.xml.flat",

@@ -4,10 +4,12 @@ package com.example.hackathon.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.hackathon.R;
@@ -17,20 +19,42 @@ import java.lang.String;
 
 public final class FragmentAccountBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final RelativeLayout rootView;
+
+  @NonNull
+  public final Button editMessagesButton;
+
+  @NonNull
+  public final Button editVotesButton;
+
+  @NonNull
+  public final Button logoutButton;
+
+  @NonNull
+  public final ImageView profileImage;
 
   @NonNull
   public final TextView textNotifications;
 
-  private FragmentAccountBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView textNotifications) {
+  @NonNull
+  public final TextView usernameTextView;
+
+  private FragmentAccountBinding(@NonNull RelativeLayout rootView,
+      @NonNull Button editMessagesButton, @NonNull Button editVotesButton,
+      @NonNull Button logoutButton, @NonNull ImageView profileImage,
+      @NonNull TextView textNotifications, @NonNull TextView usernameTextView) {
     this.rootView = rootView;
+    this.editMessagesButton = editMessagesButton;
+    this.editVotesButton = editVotesButton;
+    this.logoutButton = logoutButton;
+    this.profileImage = profileImage;
     this.textNotifications = textNotifications;
+    this.usernameTextView = usernameTextView;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -55,13 +79,44 @@ public final class FragmentAccountBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.editMessagesButton;
+      Button editMessagesButton = ViewBindings.findChildViewById(rootView, id);
+      if (editMessagesButton == null) {
+        break missingId;
+      }
+
+      id = R.id.editVotesButton;
+      Button editVotesButton = ViewBindings.findChildViewById(rootView, id);
+      if (editVotesButton == null) {
+        break missingId;
+      }
+
+      id = R.id.logoutButton;
+      Button logoutButton = ViewBindings.findChildViewById(rootView, id);
+      if (logoutButton == null) {
+        break missingId;
+      }
+
+      id = R.id.profileImage;
+      ImageView profileImage = ViewBindings.findChildViewById(rootView, id);
+      if (profileImage == null) {
+        break missingId;
+      }
+
       id = R.id.text_notifications;
       TextView textNotifications = ViewBindings.findChildViewById(rootView, id);
       if (textNotifications == null) {
         break missingId;
       }
 
-      return new FragmentAccountBinding((ConstraintLayout) rootView, textNotifications);
+      id = R.id.usernameTextView;
+      TextView usernameTextView = ViewBindings.findChildViewById(rootView, id);
+      if (usernameTextView == null) {
+        break missingId;
+      }
+
+      return new FragmentAccountBinding((RelativeLayout) rootView, editMessagesButton,
+          editVotesButton, logoutButton, profileImage, textNotifications, usernameTextView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
