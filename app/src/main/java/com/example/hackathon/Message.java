@@ -5,15 +5,18 @@ public class Message {
     private String messageText; // Texte du message
     private long timestamp; // Horodatage du message
 
+    private boolean isAnonyme;
+
     // Constructeur vide requis pour Firebase
     public Message() {
     }
 
     // Constructeur avec paramètres
-    public Message(String userId, String messageText, long timestamp) {
+    public Message(String userId, String messageText, long timestamp, boolean isAnonyme) {
         this.userId = userId;
         this.messageText = messageText;
         this.timestamp = timestamp;
+        this.isAnonyme = isAnonyme;
     }
 
     // Méthodes Getter et Setter
@@ -39,6 +42,14 @@ public class Message {
 
     public void setTimestamp(long timestamp) {
         this.timestamp = timestamp;
+    }
+
+    public boolean isAnonyme() {
+        return isAnonyme;
+    }
+
+    public void setAnonyme(boolean anonyme) {
+        isAnonyme = anonyme;
     }
 }
 
