@@ -89,7 +89,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
 
     public void sortMessagesByTimestamp() {
         // Trie la liste par timestamp (du plus récent au plus ancien)
-        Collections.sort(list, new Comparator<Message>() {
+        list.sort(new Comparator<Message>() {
             @Override
             public int compare(Message message1, Message message2) {
                 return Long.compare(message2.getTimestamp(), message1.getTimestamp());

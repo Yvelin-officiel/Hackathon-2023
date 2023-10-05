@@ -1,6 +1,5 @@
 package com.example.hackathon;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -63,8 +62,8 @@ public class HomeActivity extends AppCompatActivity
     }
 
     /**
-     * Set the parameter to the main view
-     * @param fragment
+     * Set a fragment to the main view
+     * @param fragment either the home, the calendar or the account
      */
     public void setFragmentView(Fragment fragment) {
         try {

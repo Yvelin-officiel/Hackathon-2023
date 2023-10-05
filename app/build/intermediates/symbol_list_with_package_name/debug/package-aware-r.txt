@@ -3373,6 +3373,7 @@ id submenuarrow
 id submit
 id submit_area
 id supportScrollUp
+id switchAnonyme
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans

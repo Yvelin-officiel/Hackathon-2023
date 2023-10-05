@@ -22,7 +22,6 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private EditText emailEditText, passwordEditText;
-    private Button loginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         emailEditText = findViewById(R.id.editTextUsername);
         passwordEditText = findViewById(R.id.editTextPassword);
-        loginButton = findViewById(R.id.buttonLogin);
+        Button loginButton = findViewById(R.id.buttonLogin);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
