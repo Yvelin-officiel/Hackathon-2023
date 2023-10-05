@@ -10,3 +10,7 @@ Contenu:
 - Page calendrier
 - Page de création de message
 - Page connexion
+
+Dans le silence virtuel,
+Anonyme, mon âme s'exprime,
+Réseaux s'animent.
