@@ -12,6 +12,8 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -25,6 +27,7 @@ public class CreateActivity extends AppCompatActivity {
     private FirebaseUser user;
 
     public int countTopics;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +44,6 @@ public class CreateActivity extends AppCompatActivity {
         LinearLayout flexLayout = findViewById(R.id.layoutFlex);
 
 
-
         // Poll section which create an edit text that create the topics on enter
         EditText topic1 = new EditText(this);
         configEditText(topic1);
@@ -53,7 +55,7 @@ public class CreateActivity extends AppCompatActivity {
         topic1.setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if (countTopics > 7){
+                if (countTopics > 7) {
                     Toast.makeText(CreateActivity.this, "8 topics maximum !", Toast.LENGTH_SHORT).show();
                     return false;
                 }
@@ -136,15 +138,20 @@ public class CreateActivity extends AppCompatActivity {
     }
 
     public void sendData(View view) {
-        writeMessage();
+        SwitchCompat switchAnonyme = findViewById(R.id.switchAnonyme);
+        boolean isAnonyme = switchAnonyme.isChecked();
+        writeMessage(isAnonyme);
+
+
         Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
         startActivity(intent);
         finish();
+
     }
 
-    public void writeMessage() {
+    public void writeMessage(boolean isAnonyme) {
         String userId = user.getUid();
-        Message msg = new Message(userId, message.getText().toString(), System.currentTimeMillis());
+        Message msg = new Message(userId, message.getText().toString(), System.currentTimeMillis(), isAnonyme);
         DatabaseReference newMessage = rootNode.push();
         String messageId = newMessage.getKey();
         rootNode.child(messageId).setValue(msg);
