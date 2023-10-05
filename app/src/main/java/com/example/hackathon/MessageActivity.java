@@ -58,7 +58,7 @@ public class MessageActivity extends AppCompatActivity {
                     Message message = snapshot.getValue(Message.class);
                     list.add(message);
                 }
-                messageAdapter.notifyDataSetChanged();
+                messageAdapter.sortMessagesByTimestamp();
 
 
             }
@@ -76,7 +76,7 @@ public class MessageActivity extends AppCompatActivity {
     @Override
     public void onBackPressed () {
         super.onBackPressed();
-        finish(); 
+        finish();
     }
 
 
