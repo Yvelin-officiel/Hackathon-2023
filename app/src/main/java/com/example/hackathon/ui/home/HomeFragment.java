@@ -57,7 +57,7 @@ public class HomeFragment extends Fragment {
                     Message message = dataSnapshot.getValue(Message.class);
                     list.add(message);
                 }
-                myAdapter.notifyDataSetChanged();
+                myAdapter.sortMessagesByTimestamp();
             }
 
             @Override

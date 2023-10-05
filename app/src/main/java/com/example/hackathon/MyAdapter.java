@@ -19,6 +19,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.Locale;
 
@@ -71,6 +73,17 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public int getItemCount() {
         return list.size();
+    }
+
+    public void sortMessagesByTimestamp() {
+        // Trie la liste par timestamp (du plus récent au plus ancien)
+        Collections.sort(list, new Comparator<Message>() {
+            @Override
+            public int compare(Message message1, Message message2) {
+                return Long.compare(message2.getTimestamp(), message1.getTimestamp());
+            }
+        });
+        notifyDataSetChanged(); // Actualise l'adaptateur après le tri
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
