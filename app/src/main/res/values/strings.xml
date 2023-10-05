@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hackathon</string>
+    <string name="app_name">YnovSocial</string>
     <string name="title_activity_create">CreateActivity</string>
     <string name="title_home">Accueil</string>
     <string name="title_calendar">Calendrier</string>
