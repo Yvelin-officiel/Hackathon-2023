@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.hackathon.R;
@@ -24,12 +25,16 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final Button createButton;
 
   @NonNull
+  public final RecyclerView messageList;
+
+  @NonNull
   public final TextView textHome;
 
   private FragmentHomeBinding(@NonNull LinearLayout rootView, @NonNull Button createButton,
-      @NonNull TextView textHome) {
+      @NonNull RecyclerView messageList, @NonNull TextView textHome) {
     this.rootView = rootView;
     this.createButton = createButton;
+    this.messageList = messageList;
     this.textHome = textHome;
   }
 
@@ -66,13 +71,19 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.messageList;
+      RecyclerView messageList = ViewBindings.findChildViewById(rootView, id);
+      if (messageList == null) {
+        break missingId;
+      }
+
       id = R.id.text_home;
       TextView textHome = ViewBindings.findChildViewById(rootView, id);
       if (textHome == null) {
         break missingId;
       }
 
-      return new FragmentHomeBinding((LinearLayout) rootView, createButton, textHome);
+      return new FragmentHomeBinding((LinearLayout) rootView, createButton, messageList, textHome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

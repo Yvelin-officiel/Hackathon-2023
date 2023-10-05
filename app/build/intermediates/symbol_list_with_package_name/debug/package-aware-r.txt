@@ -1429,6 +1429,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color grey
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color m3_appbar_overlay_color
@@ -2769,11 +2770,13 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable account_top_background
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_account_circle_24
 drawable baseline_add_circle_24
 drawable baseline_calendar_month_24
+drawable baseline_cancel_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2801,11 +2804,13 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable default_profile_image
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable edit_text_border
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_arrow_back_black_24
@@ -2978,6 +2983,7 @@ id always
 id androidx_window_activity_scope
 id animateToEnd
 id animateToStart
+id ano
 id antiClockwise
 id anticipate
 id arc
@@ -2987,6 +2993,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backButton
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3007,7 +3014,6 @@ id browser_actions_menu_view
 id buttonLogin
 id buttonPanel
 id cache_measures
-id calendarView
 id callMeasure
 id cancel_button
 id carryVelocity
@@ -3047,6 +3053,8 @@ id custom
 id customPanel
 id cut
 id dark
+id date
+id datePicker
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3080,9 +3088,12 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editMessagesButton
 id editTextPassword
 id editTextUsername
+id editVotesButton
 id edit_query
+id edtMessage
 id elastic
 id embed
 id end
@@ -3145,6 +3156,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layoutFlex
 id left
 id leftToRight
 id legacy
@@ -3152,9 +3164,11 @@ id light
 id line1
 id line3
 id linear
+id listMessage
 id listMode
 id list_item
 id locale
+id logoutButton
 id ltr
 id m3_side_sheet
 id marquee
@@ -3183,6 +3197,7 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id message
+id messageList
 id middle
 id mini
 id mobile_navigation
@@ -3193,6 +3208,7 @@ id month_navigation_next
 id month_navigation_previous
 id month_title
 id motion_base
+id msg
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
 id mtrl_calendar_days_of_week
@@ -3261,12 +3277,14 @@ id pin
 id position
 id postLayout
 id pressed
+id profileImage
 id progress_circular
 id progress_horizontal
 id radio
-id radiobtn1
-id radiobtn2
-id radiobtn3
+id radioEvent
+id radioGroup
+id radioMessage
+id radioPoll
 id ratio
 id rectangles
 id reverseSawtooth
@@ -3409,6 +3427,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id userNameTextView
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3539,6 +3558,7 @@ layout abc_tooltip
 layout activity_create
 layout activity_home
 layout activity_login
+layout activity_message
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -3579,6 +3599,7 @@ layout material_time_input
 layout material_timepicker
 layout material_timepicker_dialog
 layout material_timepicker_textinput_display
+layout message
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -3623,6 +3644,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu bottom_nav_menu
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 navigation mobile_navigation
 plurals mtrl_badge_content_description

@@ -1,6 +1,5 @@
 package com.example.hackathon.ui.home;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -57,7 +56,7 @@ public class HomeFragment extends Fragment {
                     Message message = dataSnapshot.getValue(Message.class);
                     list.add(message);
                 }
-                myAdapter.notifyDataSetChanged();
+                myAdapter.sortMessagesByTimestamp();
             }
 
             @Override
