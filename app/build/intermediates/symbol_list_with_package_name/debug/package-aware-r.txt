@@ -3101,7 +3101,7 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id eventCreate
-id eventsDisplay
+id events
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu

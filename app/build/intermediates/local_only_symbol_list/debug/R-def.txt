@@ -33,7 +33,7 @@ id editTextUsername
 id editVotesButton
 id edtMessage
 id eventCreate
-id eventsDisplay
+id events
 id flFragment
 id layoutFlex
 id listMessage

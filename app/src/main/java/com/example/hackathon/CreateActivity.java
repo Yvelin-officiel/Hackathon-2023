@@ -19,7 +19,6 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-
 public class CreateActivity extends AppCompatActivity {
     private DatabaseReference rootNode;
     private EditText message;
@@ -123,6 +122,10 @@ public class CreateActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Config xml values programmatically
+     * @param topic editText to setup
+     */
     private void configEditText(EditText topic) {
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.WRAP_CONTENT,
@@ -133,10 +136,13 @@ public class CreateActivity extends AppCompatActivity {
         topic.setWidth(1000);
         topic.setHeight(150);
 
-
         topic.setBackgroundResource(R.drawable.edit_text_border);
     }
 
+    /**
+     * Submit button onClick method, used to write data in database and switch activity
+     * @param view submit button
+     */
     public void sendData(View view) {
         SwitchCompat switchAnonyme = findViewById(R.id.switchAnonyme);
         boolean isAnonyme = switchAnonyme.isChecked();
@@ -149,6 +155,10 @@ public class CreateActivity extends AppCompatActivity {
 
     }
 
+
+    /**
+     * Create an instance of Message object and write it in database
+     */
     public void writeMessage(boolean isAnonyme) {
         String userId = user.getUid();
         Message msg = new Message(userId, message.getText().toString(), System.currentTimeMillis(), isAnonyme);

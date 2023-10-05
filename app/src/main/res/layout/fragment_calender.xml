@@ -28,12 +28,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/eventsDisplay"
+        <ScrollView
+            android:id="@+id/events"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            />
+            android:contentDescription="Display events ">
+
+        </ScrollView>
+
 
         <Button
             android:id="@+id/eventCreate"

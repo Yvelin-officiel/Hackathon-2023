@@ -25,9 +25,7 @@ import java.util.Locale;
 public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageViewHolder> {
 
     Context context;
-
     ArrayList<Message> list;
-
 
     public MessageAdapter(Context context, ArrayList<Message> list) {
         this.context = context;

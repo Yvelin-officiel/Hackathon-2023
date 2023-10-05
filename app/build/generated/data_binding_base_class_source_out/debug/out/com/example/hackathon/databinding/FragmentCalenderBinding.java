@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -28,18 +29,17 @@ public final class FragmentCalenderBinding implements ViewBinding {
   public final Button eventCreate;
 
   @NonNull
-  public final TextView eventsDisplay;
+  public final ScrollView events;
 
   @NonNull
   public final TextView textDashboard;
 
   private FragmentCalenderBinding(@NonNull LinearLayout rootView, @NonNull DatePicker datePicker,
-      @NonNull Button eventCreate, @NonNull TextView eventsDisplay,
-      @NonNull TextView textDashboard) {
+      @NonNull Button eventCreate, @NonNull ScrollView events, @NonNull TextView textDashboard) {
     this.rootView = rootView;
     this.datePicker = datePicker;
     this.eventCreate = eventCreate;
-    this.eventsDisplay = eventsDisplay;
+    this.events = events;
     this.textDashboard = textDashboard;
   }
 
@@ -82,9 +82,9 @@ public final class FragmentCalenderBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.eventsDisplay;
-      TextView eventsDisplay = ViewBindings.findChildViewById(rootView, id);
-      if (eventsDisplay == null) {
+      id = R.id.events;
+      ScrollView events = ViewBindings.findChildViewById(rootView, id);
+      if (events == null) {
         break missingId;
       }
 
@@ -94,8 +94,8 @@ public final class FragmentCalenderBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentCalenderBinding((LinearLayout) rootView, datePicker, eventCreate,
-          eventsDisplay, textDashboard);
+      return new FragmentCalenderBinding((LinearLayout) rootView, datePicker, eventCreate, events,
+          textDashboard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
