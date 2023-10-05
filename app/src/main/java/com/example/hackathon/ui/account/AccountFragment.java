@@ -63,11 +63,19 @@ public class AccountFragment extends Fragment {
     public void findUserName(View view) {
         if (user != null) {
             String userEmail = user.getEmail();
-            String userName = userEmail.split("@")[0]; // Extraction du nom d'utilisateur
+            String[] parts = userEmail.split("@");
+            String[] nameParts = parts[0].split("\\.");
 
-            // Affichez le nom d'utilisateur dans votre activité
+            String prenom = nameParts[0];
+            String nom = nameParts[1];
+
+            // Formatage du nom et du prénom
+            String nomPrenom = nom.substring(0, 1).toUpperCase() + nom.substring(1).toLowerCase() + " " +
+                    prenom.substring(0, 1).toUpperCase() + prenom.substring(1).toLowerCase();
+
+            // Affiche le nom d'utilisateur (Nom et Prenom)
             TextView userNameTextView = view.findViewById(R.id.userNameTextView);
-            userNameTextView.setText(userName);
+            userNameTextView.setText(nomPrenom);
         }
     }
 }
