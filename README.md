@@ -24,10 +24,11 @@ Contenu:
 - Page connexion
 - Page de gestion de compte
 
-
-KANBAN
+KANBAN    
 https://trello.com/b/Fv9cjmmR/hackathon
 
+PEER REVIEW    
+https://docs.google.com/document/d/1m9pg6dnokvztxyeImy7ZvfxcrAgOjikbX9juCRDj1SQ/edit?pli=1
 Dans le silence virtuel,
 Anonyme, mon âme s'exprime,
 Réseaux s'animent.
